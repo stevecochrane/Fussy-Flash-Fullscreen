@@ -74,17 +74,17 @@ package {
             if (stage.displayState == StageDisplayState.FULL_SCREEN_INTERACTIVE) {
 
                 //  Scale the container as many times as the screen size will allow.
-        		container.scaleX = Math.floor(stage.stageWidth / (baseContainerWidth / baseScale)) / 2;
-        		container.scaleY = Math.floor(stage.stageHeight / (baseContainerHeight / baseScale)) / 2;
+                container.scaleX = Math.floor(stage.stageWidth / (baseContainerWidth / baseScale)) / 2;
+                container.scaleY = Math.floor(stage.stageHeight / (baseContainerHeight / baseScale)) / 2;
 
-        		//  Then make sure both scale values are equal, using the lesser of the two.
-        		if (container.scaleX < container.scaleY) {
-            		container.scaleY = container.scaleX;
-        		} else if (container.scaleX > container.scaleY) {
-            		container.scaleX = container.scaleY;
-        		}
+                //  Then make sure both scale values are equal, using the lesser of the two.
+                if (container.scaleX < container.scaleY) {
+                    container.scaleY = container.scaleX;
+                } else if (container.scaleX > container.scaleY) {
+                    container.scaleX = container.scaleY;
+                }
 
-        		//  Now, position the game in the center of the screen.
+                //  Now, position the game in the center of the screen.
                 container.x = (stage.stageWidth - (baseContainerWidth * container.scaleX)) / 2;
                 container.y = (stage.stageHeight - (baseContainerHeight * container.scaleY)) / 2;
 
