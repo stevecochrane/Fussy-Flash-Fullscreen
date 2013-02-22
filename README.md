@@ -1,9 +1,9 @@
 Fussy Flash Fullscreen
 ======================
 
-This is a container element for Flash games that is built specifically with pixel art in mind. The usual methods for fullscreen mode in Flash aren't ideal for pixel art because they scale up by inexact multiples and distort the art, or they apply antialiasing. This method scales up the game by an exact multiple (think Nearest Neighbor in Photoshop) as much as the viewer's display will allow, and no further. 
+This is a container element for Flash games that is built specifically with pixel art in mind. The usual methods for fullscreen mode in Flash aren't ideal for pixel art because they scale up by inexact multiples and distort the art, or they apply antialiasing. This method scales up the game by an exact multiple (think Nearest Neighbor in Photoshop) as much as the viewer's display will allow, and no further. The F key toggles fullscreen by default and this uses the "fullscreen interactive" mode introduced in Flash Player 11.3 which allows keyboard input while in fullscreen.
 
-This is also designed to work well when run in the browser or standalone/projector mode. The F key toggles fullscreen by default and uses the "fullscreen interactive" mode introduced in Flash Player 11.3 which allows for keyboard input. If you're distributing as a standalone/projector and have no need for the hotkey you can easily disable it.
+*Note:* this technique will break your preloader, or at least it does for my Flixel games, and I'm not sure how to get around that. So while this works great for Flash games distributed as standalone/projector files, it's probably a deal-breaker for web games, I'm sad to say. I'm sure this could work with a custom preloader of some sort but I don't have the ability to do that myself.
 
 Here are some instructions for how to get set up:
 
@@ -16,5 +16,3 @@ Here are some instructions for how to get set up:
 4. Change instances of 'FussyFlashFullscreen' and the file name to whatever your game is called.
 
 5. Compile FussyFlashFullscreen.as (or whatever you renamed it to) and enjoy!
-
-Feedback and questions are welcome: steve@stevecochrane.com
