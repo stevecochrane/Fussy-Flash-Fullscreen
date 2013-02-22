@@ -21,7 +21,8 @@ package {
         //  already use the Ctrl/Cmd + F key to toggle fullscreen. To disable this hotkey, set to -1.
         public var fullScreenKeyCode:int = 70;
         //  This is the object for your game. In Flixel this is what extends the FlxGame object and is 
-        //  typically the AS object that you have compiled, until now.
+        //  typically the AS object that you've compiled to build the game. For example if you were 
+        //  using this with Mode, you would change "TheGameObject" to "Mode".
         public var gameObject:TheGameObject = new TheGameObject();
         public var container:Sprite;
 

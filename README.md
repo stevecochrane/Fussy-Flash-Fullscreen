@@ -7,10 +7,14 @@ This is also designed to work well when run in the browser or standalone/project
 
 Here are some instructions for how to get set up:
 
-1. Since this will replace your game's object as the object that gets compiled, the SWF properties should be removed or commented out from the game object AS. For example with Flixel's [Mode](https://github.com/AdamAtomic/Mode) you would comment out the line starting with "[SWF" in Mode.as.
+1. Move FussyFlashFullscreen.as into your game's directory.
 
-2. In FussyFlashFullscreen.as, change the SWF properties to match your game and follow the commented directions near the top for a few more changes. You shouldn't have to change anything beyond the variable declarations.
+2. Since this will replace your game's object as the object that gets compiled, the SWF properties should be removed or commented out from the game object AS. For example with Flixel's [Mode](https://github.com/AdamAtomic/Mode) you would comment out the line starting with "[SWF" in Mode.as.
 
-3. Change instances of 'FussyFlashFullscreen' and the file name to whatever your game is called.
+3. In FussyFlashFullscreen.as, change the SWF properties to match your game and follow the commented directions near the top for a few more changes. You shouldn't have to change anything below the variable declarations.
 
-4. Compile and enjoy!
+4. Change instances of 'FussyFlashFullscreen' and the file name to whatever your game is called.
+
+5. Compile FussyFlashFullscreen.as (or whatever you renamed it to) and enjoy!
+
+Feedback and questions are welcome: steve@stevecochrane.com
